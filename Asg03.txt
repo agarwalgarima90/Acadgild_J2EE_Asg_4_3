@@ -1,0 +1,8 @@
+//Display CNAME using the HAVING clause to filter the result set to only those records of CNAME column that have a count of greater than two(i.e. HAVING COUNT(*) >2).
+1.a : select CNAME from customer group by DOB having count(*) > 2;
+
+//Select all Customers from the Customer table and group them by the CNAME.
+1.b : select * from customer group by CNAME;
+
+//Select all records from Customer table, then orders them by the CNAME field in ascending order.
+1.c : select * from customer order by cname;
